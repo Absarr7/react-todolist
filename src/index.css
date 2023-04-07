@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +12,91 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+*{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+}
+
+
+
+.color-dark {
+  background: #282828;
+}
+
+.add-task-input {
+  border: none;
+  outline: 1px solid gray;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: black;
+}
+
+body {
+  background: #202020;
+  /* height: 565px; */
+}
+
+.naaav {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+
+
+.btn-add {
+  display: flex;
+  height: 52px;
+  width: 55px;
+  font-size: 25px;
+  align-items: center;
+  place-content: center;
+  color: white;
+  
+  /* text-align: center; */
+}
+
+.btn-color {
+  background: #f04203
+}
+
+.btn-color:hover {
+  background-color: #af3305;
+  color: white;
+}
+
+
+.task-container {
+  background: rgba(22, 22, 22, 0.774);
+  margin: 10px 2px;
+  width: 575px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  padding: 12px 25px;
+}
+
+.todolist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.task-title {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.task-complete {
+  display: flex;
+  align-items: center;
+}
+
+.task-comp {
+  text-decoration: underline;
 }
