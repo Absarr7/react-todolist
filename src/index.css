@@ -98,5 +98,5 @@ p {
 }
 
 .task-comp {
-  text-decoration: underline;
+  text-decoration: line-through;
 }

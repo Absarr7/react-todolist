@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import Task from './Task'
+import Task from './Task';
+import sound from "./assets/comp.wav"
 
 
 
@@ -19,7 +20,7 @@ const Todo = ()=>{
         const task = {
             id: todoList.length === 0 ? 1 : todoList[todoList.length - 1].id + 1,
             taskName: newTask,
-            taskCompleted: false,
+            completed: false,
         }
         setTodoList([...todoList, task]);
         setNewTask("")
@@ -31,9 +32,23 @@ const Todo = ()=>{
         setTodoList(todoList.filter((task)=>task.id !== id));
     } 
 
-    const taskComp = ()=>{
-        todoList.map()
+
+    const taskCompleted = (id)=>{
+        setTodoList(
+            todoList.map((task)=>{
+                if (task.id === id) {
+                    return {...task, completed: !task.completed}
+                }
+
+                else {
+                    return task;
+                }
+            })
+
+            );
+
     }
+    
     
     
 
@@ -49,10 +64,11 @@ const Todo = ()=>{
          <button className='btn btn-add btn-color' onClick={addTask}><i class="fa-solid fa-plus"></i></button>
         </div>
         </div>
-        <div className='todolist'>
+        <div className='todolist my-3'>
             {todoList.map((task)=>{
                 return(
-                    <Task taskName={task.taskName} id={task.id} delTask={delTask} completed={task.taskCompleted}/>
+                    <Task taskName={task.taskName} id={task.id} delTask={delTask} completed={task.completed} taskCompleted={taskCompleted}/>
+
                 )
             })}
         </div>

@@ -1,3 +1,5 @@
+import sound from "./assets/comp.wav"
+
 const Task = (props)=>{
 
 
@@ -5,9 +7,9 @@ const Task = (props)=>{
         <div className='task-container'>
             <div className='task-info d-flex'>
                 <div className='task-complete'>
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onClick={()=> props.taskComp(props.taskCompleted)}/>
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onClick={()=> {props.taskCompleted(props.id)}} />
                 </div>
-                    <p className='task-title mx-3'>
+                    <p className={`task-title mx-3 ${props.completed ? "task-comp" : "task-not-comp"}`}>
                         {props.taskName}
                     </p>
             </div>
