@@ -19,26 +19,23 @@ code {
   color: white;
 }
 
-
-
-.color-dark {
-  background: #282828;
-}
-
 .add-task-input {
   border: none;
   outline: 1px solid gray;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   color: black;
+  width: 500px;
 }
 
 body {
   background: #202020;
+  
   /* height: 565px; */
 }
 
 .naaav {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background: #282828;
 
 }
 
@@ -99,4 +96,18 @@ p {
 
 .task-comp {
   text-decoration: line-through;
+}
+
+
+
+/* MAKING THE DESIGN RESPONSIVE... */
+
+@media only screen and (max-width: 600px) {
+
+  .task-container{width: 380px;}
+  .task-title{font-size: 14px;}
+  .add-area{flex-direction: column;}
+  .add-task-input{width: 380px; margin-bottom: 12px; margin-top: 10px;}
+  .head-p {display: none;}
+
 }

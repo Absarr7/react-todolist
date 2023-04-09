@@ -57,10 +57,10 @@ const Todo = ()=>{
 
         <div className='text-center d-flex flex-column justify-content-center py-4'>
         <h3 className='fw-bold fs-1 text-white p-0 m-0'>Track your TASKS.</h3>
-        <p className='fs-6 fw-regular text-white p-0'>Write, Track, & Manage your goals to skyrocket your productivity.</p>
-        <div className='py-3 d-flex align-items-center justify-content-center'>
-         <input type="name" className="form-control-lg px-3 mx-2 add-task-input" placeholder='Enter the Task...' onChange={handleChange} style={{"width":"500px"}} value={newTask}/>
-         <button className='btn btn-add btn-color' onClick={addTask}><i class="fa-solid fa-plus"></i></button>
+        <p className='fs-6 fw-regular text-white p-0 head-p'>Write, Track, & Manage your goals to skyrocket your productivity.</p>
+        <div className='py-3 d-flex align-items-center justify-content-center add-area'>
+         <input type="name" className="form-control-lg px-3 mx-2 add-task-input" placeholder='Enter the Task...' onChange={handleChange} value={newTask}/>
+         <button className='btn btn-add btn-color' onClick={addTask}><i class="fa-solid fa-plus add-icon"></i></button>
         </div>
         </div>
         <div className='todolist my-3'>

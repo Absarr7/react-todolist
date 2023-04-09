@@ -1,11 +1,11 @@
-import React, {useState} from "react"
+import React from "react"
 
 const Navbar = ()=>{
 
   return (
-        <nav className="navbar navbar-expand-lg color-dark naaav">
+        <nav className="navbar navbar-expand-lg naaav navbar-dark">
       <div className="container-fluid">
-        <a className="navbar-brand text-white fs-4 fw-bold mx-3" to="/">69 SHADES OF ABSAR</a>
+        <h1 className="navbar-brand text-white fs-1 fw-bold mx-3" to="/">ABSAR</h1>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
