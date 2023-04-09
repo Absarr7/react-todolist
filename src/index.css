@@ -81,7 +81,7 @@ body {
 }
 
 p {
-  margin-bottom: 0;
+  margin-bottom: 3px;
 }
 
 .task-title {
@@ -105,7 +105,7 @@ p {
 @media only screen and (max-width: 600px) {
 
   .task-container{width: 380px;}
-  .task-title{font-size: 14px;}
+  .task-title{font-size: 16px;}
   .add-area{flex-direction: column;}
   .add-task-input{width: 380px; margin-bottom: 12px; margin-top: 10px;}
   .head-p {display: none;}
