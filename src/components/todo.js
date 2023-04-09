@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Task from './Task';
-import sound from "./assets/comp.wav"
 
 
 

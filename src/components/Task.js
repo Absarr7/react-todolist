@@ -1,5 +1,3 @@
-import sound from "./assets/comp.wav"
-
 const Task = (props)=>{
 
 
